@@ -2,9 +2,16 @@ language: node_js
 node_js: node
 services:
 - mongodb
-addons:
-apt:
+addons: 
+apt: 
 sources:
 - mongodb-3.2-precise
 packages:
 - mongodb-org-server
+deploy:
+  provider: heroku
+  api_key:
+    secure: MJAAqqc/6yiH+bOHDvYFyEqEz1iryRPN5DIcVbJSHKm2oQ181Ac7pCWFQr1zLBv6PjuAQ+vKrT38SOlkc2iBK/diC1WBpfOgm6qhMDwec310ItPJ3SRkdXR87ASwf8qUJTAOIxGFwhjTqw7mOMxeS0ZE4LNTCBM+WdSrt7QHyQ6uZEZDm2b2OB4EYExi4O5WtiwhVs1UWY4+J26jAbTo3dEv1ZXexqb89NvIi9PDT5/Gxs+QCp3hXllFBQJk8rQwj2ywFmZTdNrE8Sdia/stppRWzudP3wT8XQBsr4MVjwiJwhZtXe2F2XK/vUskMsizBT+UXp11JNkEzTNiJDARoqvcp5GdcA5LmALveuUPJLG50r5lWO3cW6kiMgzILBJfiLZaYDkw9iaBqw6JAOUJtP6rV6OYnA2V/t/wdd7/8bpexd5EcGPB2W8Xh+gaVeHXD1zsZ3DG07DzkB7u1bMKBdoJrdC9v/YO4+mwlLiHYcxJ1uHfqq9Z+V+1qpLQM195tAA72QMbxv4QncEwplXuZZb7UjydoP8WEevSS7y6iiwww6SMAd/cp2qrp8G2HGznD8yhq4jzhSxn+ULW5IUucrEFQGgR7VAzBBhGD3GPg+ZjgLmTAlzC4qlNd9W/FUQ4xt67BEPlHbFIv9fRt5sRQ8mujOvd1ozFLcrROgVK6qM=
+  app: 'yes'
+  on:
+    repo: ztrabzada1988/mongodb-shopping-list
