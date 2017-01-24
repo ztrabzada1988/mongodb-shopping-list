@@ -3,7 +3,6 @@
     "version": "1.0.0",
     "description": "persistent db for shopping-list",
     "main": "server.js",
-    // use test as mocha mm
     "scripts": {
         "test": "mocha"
     },
