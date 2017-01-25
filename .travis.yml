@@ -2,8 +2,8 @@ language: node_js
 node_js: node
 services:
 - mongodb
-addons:
-apt:
+addons: 
+apt: 
 sources:
 - mongodb-3.2-precise
 packages:
@@ -11,9 +11,7 @@ packages:
 deploy:
   provider: heroku
   api_key:
-    secure: MJAAqqc/6yiH+bOHDvYFyEqEz1iryRPN5DIcVbJSHKm2oQ181Ac7pCWFQr1zLBv6PjuAQ+vKrT38SOlkc2iBK/diC1WBpfOgm6qhMDwec310ItPJ3SRkdXR87ASwf8qUJTAOIxGFwhjTqw7mOMxeS0ZE4LNTCBM+WdSrt7QHyQ6uZEZDm2b2OB4EYExi4O5WtiwhVs1UWY4+J26jAbTo3dEv1ZXexqb89NvIi9PDT5/Gxs+QCp3hXllFBQJk8rQwj2ywFmZTdNrE8Sdia/stppRWzudP3wT8XQBsr4MVjwiJwhZtXe2F2XK/vUskMsizBT+UXp11JNkEzTNiJDARoqvcp5GdcA5LmALveuUPJLG50r5lWO3cW6kiMgzILBJfiLZaYDkw9iaBqw6JAOUJtP6rV6OYnA2V/t/wdd7/8bpexd5EcGPB2W8Xh+gaVeHXD1zsZ3DG07DzkB7u1bMKBdoJrdC9v/YO4+mwlLiHYcxJ1uHfqq9Z+V+1qpLQM195tAA72QMbxv4QncEwplXuZZb7UjydoP8WEevSS7y6iiwww6SMAd/cp2qrp8G2HGznD8yhq4jzhSxn+ULW5IUucrEFQGgR7VAzBBhGD3GPg+ZjgLmTAlzC4qlNd9W/FUQ4xt67BEPlHbFIv9fRt5sRQ8mujOvd1ozFLcrROgVK6qM=
-    app: 'obscure-harbor-45579'
+    secure: Z2CqyV+avAgZFV/z/1joKEKGS3+6+2fBfD/Jh4PWwH+Lt2PZutHlhuvbpypYtIN3DpJmszqTqO73+4FYtFckCAeGy41u4s7rMGqapp1wWLNanAxKiUrNmVXfhXvfbWEO+rbA3sUHMnhvOMzjyP8Ady4j59RCVvV1ai/KVz0nsGmcZ0ywu7gHtmU5vrO2uWAnDnAPgCek50fJZ19q9s1aASbQkdaojkh47BlyV2Ar+S8CaW7j1AwgBurk1bL8WzjRZXc5dRh4xApAlY7XJDJSI5+2yh/1Xjfm1EjZiPRHnjEOJc6dEYn393RtO8QEO/9x/gX8OknRTFlX5H1kUItsYoG/Byg+DHJ9IB9Nn9855Bg7E5WfnGoEHu+6U5HD6zsqRMRLWlXnEsVDgxo6DQslEx2MOhy9J1Y+1KN6IAiEacjsxE0vFJgEef6kinjYYfkN1+MjFjl+NOdVWMfo4LsJ40EHCyIfFBa+PAuQgzYP+cMwoFVDah9AaaBnqX5Z+EPHGvwXKYiIfAxMcBDkeryTr0RSYWjPkMmAlSgItAZx8I9o30SY63EJ3SeMsmVBHRcfnPeGA0EE5rZDgzEW/d+BkVu6zQ865srkPHUbep5sYlucKwnm6y2nGq/oHvz1xQW01CzOX/csfm8s4QXY8nhBrXxyUEUpTn3FmfXvS/M+sQ4=
+  app: obscure-harbor-45579
   on:
     repo: ztrabzada1988/mongodb-shopping-list
-
-
